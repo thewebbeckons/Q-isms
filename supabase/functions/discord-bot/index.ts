@@ -109,6 +109,10 @@ async function home(request: Request) {
       "Paisleys - things people wear on their boobs",
       "Slab of land - plot of land",
       "Wireless chicken - boneless chicken",
+      "Having thought about it. I think about 29 is the amount of wood a woodchuck could chuck.",
+      "If dinosaurs became chickens then they probably clucked. Spielberg was wrong!",
+      "A lolipop is just a flavor enhancer for your spit!",
+      "Do we know which poop is our last poop?",
     ];
 
     let qism = qisms[Math.floor(Math.random() * qisms.length)];
