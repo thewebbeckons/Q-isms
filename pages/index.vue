@@ -12,7 +12,7 @@
       />
 
       <div
-        class="flex items-center justify-center max-w-[500px] md:w-[500px] min-h-[140px] p-6 [background:linear-gradient(45deg,#fff,theme(colors.white)_50%,#fff)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.fuchsia.900/.48)_80%,_theme(colors.fuchsia.500)_86%,_theme(colors.fuchsia.300)_90%,_theme(colors.fuchsia.500)_94%,_theme(colors.fuchsia.900/.48))_border-box] rounded-2xl border-4 border-transparent animate-border"
+        class="flex items-center justify-center max-w-[500px] md:w-[500px] min-h-[140px] p-6 [background:linear-gradient(45deg,theme(colors.white),theme(colors.white)_50%,theme(colors.white))_padding-box,conic-gradient(from_var(--border-angle),theme(colors.fuchsia.900/.48)_80%,_theme(colors.fuchsia.500)_86%,_theme(colors.fuchsia.300)_90%,_theme(colors.fuchsia.500)_94%,_theme(colors.fuchsia.900/.48))_border-box] dark:[background:linear-gradient(45deg,theme(colors.slate.900),theme(colors.slate.900)_50%,theme(colors.slate.900))_padding-box,conic-gradient(from_var(--border-angle),theme(colors.fuchsia.900/.48)_80%,_theme(colors.fuchsia.500)_86%,_theme(colors.fuchsia.300)_90%,_theme(colors.fuchsia.500)_94%,_theme(colors.fuchsia.900/.48))_border-box] rounded-2xl border-4 border-transparent animate-border"
       >
         Using the ol' brain box...
       </div>
@@ -33,10 +33,12 @@
           class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"
         ></div>
         <div
-          class="font-bold text-xl leading-6 max-w-[500px] md:w-[500px] min-h-[140px] relative px-7 py-4 bg-white rounded-xl flex flex-col items-center justify-center divide-x divide-gray-600 border-4 border-black"
+          class="font-bold text-xl leading-6 max-w-[500px] md:w-[500px] min-h-[140px] relative px-7 py-4 bg-white dark:bg-slate-900 rounded-xl flex flex-col items-center justify-center divide-x divide-gray-600 border-4 border-black"
         >
           {{ quote }}
-          <p class="self-end pt-2 text-sm text-slate-600">- Q (Tony)</p>
+          <p class="self-end pt-2 text-sm text-slate-600 dark:text-slate-400">
+            - Q (Tony)
+          </p>
         </div>
       </div>
     </div>
