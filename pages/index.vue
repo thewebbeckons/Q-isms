@@ -26,7 +26,7 @@
         class="z-10"
       />
       <div
-        class="relative group rounded-xl hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-shadow duration-150 ease-in-out cursor-pointer"
+        class="relative group rounded-xl hover:shadow-xl transition-shadow duration-50 ease-in-out cursor-pointer"
         @click="fetchQuote"
       >
         <div
