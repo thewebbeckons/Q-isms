@@ -49,28 +49,6 @@
 const quote = ref(""); // Initialize to an empty string to avoid hydration errors
 const loading = ref(false);
 
-// Array of image pairs
-const imagePairs = [
-  { animated: "/foxes/Animated/Angel.gif", static: "/foxes/Static/Angel.png" },
-  { animated: "/foxes/Animated/Comfy.gif", static: "/foxes/Static/Comfy.png" },
-  { animated: "/foxes/Animated/Goofy.gif", static: "/foxes/Static/Goofy.png" },
-  {
-    animated: "/foxes/Animated/Hug me.gif",
-    static: "/foxes/Static/Hug me.png",
-  },
-  {
-    animated: "/foxes/Animated/Love 3.gif",
-    static: "/foxes/Static/Love 3.png",
-  },
-  { animated: "/foxes/Animated/Lurk.gif", static: "/foxes/Static/Lurk.png" },
-  // Add more pairs here as needed
-];
-
-// Randomly select one pair from the array
-const selectedPair = imagePairs[Math.floor(Math.random() * imagePairs.length)];
-const animatedImage = selectedPair.animated;
-const staticImage = selectedPair.static;
-
 const fetchQuote = async () => {
   loading.value = true;
   try {
