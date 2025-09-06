@@ -3,6 +3,8 @@ import { getRandomQuote } from "~/server/utils/quotes";
 export default defineEventHandler(async (event) => {
   try {
     const quote = await getRandomQuote();
+    // Artificial 1s delay
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     return { quote };
   } catch (err) {
