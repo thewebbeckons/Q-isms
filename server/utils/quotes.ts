@@ -1,11 +1,9 @@
-import { promises as fs } from "node:fs";
-import { join } from "node:path";
+import data from "~/server/utils/quotes.json";
 
 export async function getRandomQuote(): Promise<string> {
-  const filePath = join(process.cwd(), "public", "data.json");
-  const raw = await fs.readFile(filePath, "utf-8");
-  const data = JSON.parse(raw) as { quotes?: string[] };
-  const quotes = Array.isArray(data.quotes) ? data.quotes : [];
+  const quotes = Array.isArray((data as any).quotes)
+    ? ((data as any).quotes as string[])
+    : [];
 
   if (!quotes.length) {
     throw new Error("No quotes available");

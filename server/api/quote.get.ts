@@ -1,4 +1,4 @@
-import { getRandomQuote } from "../utils/quotes";
+import { getRandomQuote } from "~/server/utils/quotes";
 
 export default defineEventHandler(async (event) => {
   try {
